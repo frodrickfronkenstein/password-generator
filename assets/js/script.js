@@ -70,7 +70,8 @@ function generatePassword(length) {
     alert("Can't generate a password without any characters.  Please try again, and select at least one type of character.");
     return generatePassword();
   }
-   
+  
+  // at long last, generate the password
   var pword =  new Array ();
 
    for (var i = 0; i < length; i++) {
