@@ -15,6 +15,16 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // Function to generate password
-function generatePassword() {
-  return "pickleman"
+function generatePassword(length = 8) {
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+   
+  var pword =  new Array ();
+
+   for (var i = 0; i < length; i++) {
+     var index = Math.floor(Math.random() * lowerCase.length);
+     pword.push(lowerCase.charAt(index));
+   }
+
+   pword = pword.join("")
+  return pword
 }
